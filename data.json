@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "project_name": "",
+            "description": "",
+            "technologies": [
+                "string1",
+                "string2",
+                "string3",
+                "string4",
+                "stringEtc"
+            ],
+            "live_link": "",
+            "github_link": "",
+            "image_urls": [
+                "path/to/image1",
+                "path/to/image2",
+                "path/to/image3",
+                "path/to/image4"
+            ]
+        }
+    ]
+}
