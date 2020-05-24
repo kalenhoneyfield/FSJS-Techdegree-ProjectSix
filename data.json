@@ -1,23 +1,137 @@
 {
+    "personal": {
+        "name": "Kalen Honeyfield",
+        "portrait": "/images/profile_400x400.jpg",
+        "skills": [
+            "Express",
+            "Node js",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "HTML Templating",
+            ".."
+        ],
+        "contact_info": {
+            "email": "kalenhoneyfield@gmail.com",
+            "github": "https://github.com/kalenhoneyfield/",
+            "twitter": "https://twitter.com/khoneyfield",
+            "linkedIn": "https://www.linkedin.com/in/kalen-honeyfield-a7ab03114"
+        }
+    },
     "projects": [
         {
             "id": 0,
-            "project_name": "",
-            "description": "",
+            "project_name": "FSJS-Techdegree-ProjectOne",
+            "description": "Random Quote Generator",
             "technologies": [
-                "string1",
-                "string2",
-                "string3",
-                "string4",
-                "stringEtc"
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "live_link": "https://kalenhoneyfield.github.io/FSJS-Techdegree-ProjectOne/",
+            "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectOne.git",
+            "image_urls": [
+                "/images/550x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "FSJS-Techdegree-ProjectTwo",
+            "description": "List Filter and Pagination",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "live_link": "https://kalenhoneyfield.github.io/FSJS-Techdegree-ProjectTwo/",
+            "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectTwo.git",
+            "image_urls": [
+                "/images/550x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "project_name": "FSJS-Techdegree-ProjectThree",
+            "description": "Interactive Form Validation",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "Regular Expressions"
+            ],
+            "live_link": "https://kalenhoneyfield.github.io/FSJS-Techdegree-ProjectThree/",
+            "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectThree.git",
+            "image_urls": [
+                "/images/550x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "FSJS-Techdegree-ProjectFour",
+            "description": "Interactive Object-Oriented Programming Game",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "Regular Expressions"
+            ],
+            "live_link": "https://kalenhoneyfield.github.io/FSJS-Techdegree-ProjectFour/",
+            "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectFour.git",
+            "image_urls": [
+                "/images/550x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "FSJS-Techdegree-ProjectFive",
+            "description": "Example Employee Directory using a Public API",
+            "technologies": [
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "Regular Expressions"
+            ],
+            "live_link": "https://kalenhoneyfield.github.io/FSJS-Techdegree-ProjectFive/",
+            "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectFive.git",
+            "image_urls": [
+                "/images/550x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "project_name": "Portfolio.kalen",
+            "description": "This very project!",
+            "technologies": [
+                "Node js",
+                "Express",
+                "Pug",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "Regular Expressions"
             ],
             "live_link": "",
-            "github_link": "",
+            "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectSix.git",
             "image_urls": [
-                "path/to/image1",
-                "path/to/image2",
-                "path/to/image3",
-                "path/to/image4"
+                "/images/550x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg",
+                "/images/1200x550.jpg"
             ]
         }
     ]
