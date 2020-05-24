@@ -3,6 +3,10 @@ extends layout.pug
 block content 
   nav.grid-container.portfolio-breadcrumb
     a(href='/') ← Back
+    if projects.id + 1 < totalProjects
+      .float-right
+        a(href=`/projects/${projects.id + 1}` ) Next →
+    
   article.grid-container.portfolio-intro.portfolio-project
     .grid-x
       .cell.small-6.medium-9.large-9
@@ -15,7 +19,7 @@ block content
           | #{projects.description}
 
       .cell.portfolio-meta.small-6.medium-2.large-3
-        h6 Technologies
+        h6 Technologies 
 
         //- Use an `each` iterator to replace the li tags below and interpolation to dynamically add the technologies used in each project.
         ul
