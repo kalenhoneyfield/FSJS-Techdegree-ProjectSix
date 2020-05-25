@@ -148,3 +148,19 @@ a:hover{
 .portfolio-bio{
     line-height: 25px;
 }
+
+/*
+Styles adjusted from template
+Experimenting atm
+*/
+.box:hover{
+  box-shadow: 200px, 200px 2px #444 !important;
+  border-radius: 5px;
+  background-color: rgba(210, 105, 30, 0.3);
+  transition: 1s linear;
+}
+
+body{
+  background-color: rgba(210, 105, 30, 0.3);
+}
+
