@@ -32,10 +32,9 @@
             "live_link": "https://kalenhoneyfield.github.io/FSJS-Techdegree-ProjectOne/",
             "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectOne.git",
             "image_urls": [
-                "/images/550x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg"
+                "/images/p1a.png",
+                "/images/p1b.png",
+                "/images/p1c.png"
             ]
         },
         {
@@ -50,10 +49,9 @@
             "live_link": "https://kalenhoneyfield.github.io/FSJS-Techdegree-ProjectTwo/",
             "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectTwo.git",
             "image_urls": [
-                "/images/550x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg"
+                "/images/p2a.png",
+                "/images/p2b.png",
+                "/images/p2c.png"
             ]
         },
         {
@@ -69,10 +67,9 @@
             "live_link": "https://kalenhoneyfield.github.io/FSJS-Techdegree-ProjectThree/",
             "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectThree.git",
             "image_urls": [
-                "/images/550x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg"
+                "/images/p3a.png",
+                "/images/p3b.png",
+                "/images/p3c.png"
             ]
         },
         {
@@ -88,10 +85,11 @@
             "live_link": "https://kalenhoneyfield.github.io/FSJS-Techdegree-ProjectFour/",
             "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectFour.git",
             "image_urls": [
-                "/images/550x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg"
+                "/images/p4a.png",
+                "/images/p4b.png",
+                "/images/p4c.png",
+                "/images/p4d.png",
+                "/images/p4e.png"
             ]
         },
         {
@@ -107,10 +105,10 @@
             "live_link": "https://kalenhoneyfield.github.io/FSJS-Techdegree-ProjectFive/",
             "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectFive.git",
             "image_urls": [
-                "/images/550x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg"
+                "/images/p5a.png",
+                "/images/p5b.png",
+                "/images/p5c.png",
+                "/images/p5d.png"
             ]
         },
         {

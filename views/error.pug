@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content 
+        article.grid-container.portfolio-intro.align-center
+            div.text-center
+                h1 Ooops Looks like an error occurred
+                p.subheader.stat #{error.statusCode}
+
+            .cell
+                div
+                    h2.text-center #{error.message}
+                    p.lead.text-light.text-left
+                    | #{error.stack}
+
