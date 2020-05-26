@@ -10,13 +10,15 @@ html(class="no-js" lang="en" dir="ltr")
     link(rel="icon", type="image/png", sizes="16x16", href="/favicon/favicon-16x16.png")
     link(rel="manifest", href="/favicon/site.webmanifest")
     link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
-    link(href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Merriweather&family=Open+Sans+Condensed:wght@300&family=Oswald&family=Pacifico&family=Special+Elite&display=swap", rel="stylesheet")
     link(rel='stylesheet', href='/css/foundation.css')
     link(rel='stylesheet', href='/css/style.css')
   body
     #my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
       .grid-y.grid-padding-x(style='height: 100%;')
         block sidebar
+
+
           br
           .cell.shrink
             img.thumbnail(src=`${personal.portrait}`)
@@ -24,12 +26,18 @@ html(class="no-js" lang="en" dir="ltr")
 
             h5 #{personal.name}
 
-            //- Add text here to describe who you are, what you do, and why you are so awesome.
             p.text-light
               | JavaScript Developer, Father, Security Specialist, Capable of doing infinite loops in 2 seconds
-
-            //- Add about page route to the href below. 
+ 
             a(href='/about') Learn More →
+
+          .cell
+            label.toggle
+              input(type='checkbox')
+              div.toggleSlider.round
+            p.text-light.toggleDesc
+              | Higher Contrast Font
+
 
     .off-canvas-content(data-off-canvas-content='')
       .title-bar.hide-for-large

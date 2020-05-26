@@ -10,7 +10,7 @@
             "CSS",
             "HTML Templating",
             "JQuery",
-            ".."
+            "Providing or accepting feedback"
         ],
         "contact_info": {
             "email": "kalenhoneyfield@gmail.com",
@@ -18,13 +18,13 @@
             "twitter": "https://twitter.com/khoneyfield",
             "linkedIn": "https://www.linkedin.com/in/kalen-honeyfield-a7ab03114"
         },
-        "pitch": "Hi, my name is Kalen. Thanks so much for taking the time out of your day to review my portfolio. After graduating from college and working for a Fortune 500 company, I have spent the last 3 years growing as a software developer. In my current role I have successfully developed an in house database driven application to assist in streamlining and managing multiple time sensitive processes. If you are reviewing my portfolio and have a need for a Full Stack JavaScript Developer, I would love to hear from you. You can reach me via any of the contact methods listed here."
+        "pitch": "Hi, my name is Kalen. Thanks so much for taking the time out of your day to review my portfolio. After graduating from college with a degree in Political Science and working for a Fortune 500 company, I have spent the last 3 years growing as a software developer, including working to achieve certification of those skills. In my current role I have successfully developed an in house database driven application to assist in streamlining and managing multiple time sensitive processes. If you have a need for a Full Stack JavaScript Developer, I would love to hear from you. You can reach me via any of the contact methods listed here."
     },
     "projects": [
         {
             "id": 0,
             "project_name": "Random Quote Generator",
-            "description": "A small app that randomly pulls from a preselected list of quotes, and then sets the background to random color.",
+            "description": "A small app that randomly pulls from a preselected list of quotes, sets the background to random color, and then displays this to the user.",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -41,7 +41,7 @@
         {
             "id": 1,
             "project_name": "List Filter and Pagination",
-            "description": "A demonstration of dynamically added pagination and filtering of content",
+            "description": "A demonstration of dynamically added pagination and content filtering",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -58,7 +58,7 @@
         {
             "id": 2,
             "project_name": "Interactive Form Validation",
-            "description": "Validating form content is important to ensuring accurate capture of data being input by humans.",
+            "description": "An example of form validation. Validating form content is important to ensuring accurate capture of data input.",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -76,7 +76,7 @@
         {
             "id": 3,
             "project_name": "Phrase Hunter",
-            "description": "Phrase Hunter is an interactive game akin to the old school \"hang man.\" This game is designed around the principles of object-oriented programming. Animations and sounds have been added to make the game feel more alive.",
+            "description": "An interactive game akin to the old school \"hang man.\" This game is designed around the principles of object-oriented programming. Animations and sounds have been added to make the game feel more alive.",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -96,7 +96,7 @@
         {
             "id": 4,
             "project_name": "Employee Directory using a Public API",
-            "description": "Pulling in data from the randomuser.me public API, this app renders an employee directory. Selecting an employee shows additional details regardng that employee and you can cycle between employees using basic modal elements.",
+            "description": "An demonstration of pulling in data from an API. This app pulls in data from the randomuser.me public API, and then renders an employee directory. Selecting an employee shows additional details regardng that employee and you can cycle between employees using basic modal elements. Dynamic color adjustments have been added based on converting data in the API, finding the employee's image on the DOM, and then centering the adjustment behind the image.",
             "technologies": [
                 "JavaScript",
                 "HTML",
