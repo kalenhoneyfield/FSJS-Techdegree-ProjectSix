@@ -34,6 +34,7 @@ app.use('/projects', projectRoute);
 app.use('*', error404Handler)
 
 app.use((err, req, res, next) => {
+    err.statusCode = err.statusCode || 500
     data.error = err
     res.status(err.statusCode).render('error', data)
 })

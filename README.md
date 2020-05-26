@@ -2,7 +2,7 @@
 > A small express app to showcase the portfolio of work I have completed at Treehouse.
 
 
-Portfolio.kalen is an express app that showcases projects I have completed at Treehouse. These projects range from a simple quote generator to this very app. My hope is that after reviewing these projects you will be able to see some of the technical and problem solving I am have.
+Portfolio.kalen is an express app that showcases projects I have completed at Treehouse. These projects range from a simple quote generator to this very app. My hope is that after reviewing these projects you will be able to see some of the technical and problem solving skill I have developed.
 
 <!-- ![](need a screen shot) -->
 

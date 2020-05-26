@@ -10,6 +10,7 @@ html(class="no-js" lang="en" dir="ltr")
     link(rel="icon", type="image/png", sizes="16x16", href="/favicon/favicon-16x16.png")
     link(rel="manifest", href="/favicon/site.webmanifest")
     link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap", rel="stylesheet")
     link(rel='stylesheet', href='/css/foundation.css')
     link(rel='stylesheet', href='/css/style.css')
   body
@@ -21,12 +22,11 @@ html(class="no-js" lang="en" dir="ltr")
             img.thumbnail(src=`${personal.portrait}`)
           .cell.auto
 
-            //- Add your name here.
             h5 #{personal.name}
 
             //- Add text here to describe who you are, what you do, and why you are so awesome.
             p.text-light
-              | Description
+              | JavaScript Developer, Father, Security Specialist, Capable of doing infinite loops in 2 seconds
 
             //- Add about page route to the href below. 
             a(href='/about') Learn More →
@@ -35,8 +35,7 @@ html(class="no-js" lang="en" dir="ltr")
       .title-bar.hide-for-large
         .title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
-
-          //- Add your name here.  This is for the mobile screen sized version.
+         
           span.title-bar-title #{personal.name}
       block content
         

@@ -1,7 +1,7 @@
 {
     "personal": {
         "name": "Kalen Honeyfield",
-        "portrait": "/images/profile_400x400.jpg",
+        "portrait": "/images/HeadShotEditSmall.jpg",
         "skills": [
             "Express",
             "Node js",
@@ -17,13 +17,14 @@
             "github": "https://github.com/kalenhoneyfield/",
             "twitter": "https://twitter.com/khoneyfield",
             "linkedIn": "https://www.linkedin.com/in/kalen-honeyfield-a7ab03114"
-        }
+        },
+        "pitch": "Hi, my name is Kalen. Thanks so much for taking the time out of your day to review my portfolio. After graduating from college and working for a Fortune 500 company, I have spent the last 3 years growing as a software developer. In my current role I have successfully developed an in house database driven application to assist in streamlining and managing multiple time sensitive processes. If you are reviewing my portfolio and have a need for a Full Stack JavaScript Developer, I would love to hear from you. You can reach me via any of the contact methods listed here."
     },
     "projects": [
         {
             "id": 0,
-            "project_name": "FSJS-Techdegree-ProjectOne",
-            "description": "Random Quote Generator",
+            "project_name": "Random Quote Generator",
+            "description": "A small app that randomly pulls from a preselected list of quotes, and then sets the background to random color.",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -39,8 +40,8 @@
         },
         {
             "id": 1,
-            "project_name": "FSJS-Techdegree-ProjectTwo",
-            "description": "List Filter and Pagination",
+            "project_name": "List Filter and Pagination",
+            "description": "A demonstration of dynamically added pagination and filtering of content",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -56,8 +57,8 @@
         },
         {
             "id": 2,
-            "project_name": "FSJS-Techdegree-ProjectThree",
-            "description": "Interactive Form Validation",
+            "project_name": "Interactive Form Validation",
+            "description": "Validating form content is important to ensuring accurate capture of data being input by humans.",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -74,8 +75,8 @@
         },
         {
             "id": 3,
-            "project_name": "FSJS-Techdegree-ProjectFour",
-            "description": "Interactive Object-Oriented Programming Game",
+            "project_name": "Phrase Hunter",
+            "description": "Phrase Hunter is an interactive game akin to the old school \"hang man.\" This game is designed around the principles of object-oriented programming. Animations and sounds have been added to make the game feel more alive.",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -94,8 +95,8 @@
         },
         {
             "id": 4,
-            "project_name": "FSJS-Techdegree-ProjectFive",
-            "description": "Example Employee Directory using a Public API",
+            "project_name": "Employee Directory using a Public API",
+            "description": "Pulling in data from the randomuser.me public API, this app renders an employee directory. Selecting an employee shows additional details regardng that employee and you can cycle between employees using basic modal elements.",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -124,14 +125,11 @@
                 "CSS",
                 "Regular Expressions"
             ],
-            "live_link": "",
+            "live_link": "/",
             "github_link": "https://github.com/kalenhoneyfield/FSJS-Techdegree-ProjectSix.git",
             "image_urls": [
-                "/images/550x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg",
-                "/images/1200x550.jpg"
-            ]
+                "/images/p6a.png"
+              ]
         }
     ]
 }
