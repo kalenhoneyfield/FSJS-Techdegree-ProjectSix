@@ -1,7 +1,7 @@
 $(document).foundation()
 
 //a class to make bubbles
-// see my gitbug for details https://github.com/kalenhoneyfield/bubbles.git
+// see my github for details https://github.com/kalenhoneyfield/bubbles.git
 class Bubble {
 
     constructor(size, blur, color ,elem) {
