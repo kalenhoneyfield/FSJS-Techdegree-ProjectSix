@@ -4,7 +4,7 @@ const os = require('os'); //to get hostname
 const path = require('path'); 
 const logger = require('morgan');
 const projectRoute = require('./routes/index')
-const error404Handler = require('./errorHandler')
+const error404Handler = require('./routes/errorHandler')
 
 
 const app = express();
@@ -15,11 +15,6 @@ app.use(logger('dev')) // morgan does a nicer job logging than a simple console 
 app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname, 'public')))
-
-app.use((req, res, next)=>{
-    const error = new Error('derp')
-    next()
-})
 
 app.get('/', (req, res) => {
     res.render('index', data)
