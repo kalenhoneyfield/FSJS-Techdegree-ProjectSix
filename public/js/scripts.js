@@ -1,28 +1,27 @@
 $(document).foundation()
 
+//grab the elements we'll need for the toggle switch
 const root = document.documentElement
-const toggleSwitch = document.querySelector('.toggle')
+const toggleSwitch = document.querySelector('.toggled')
 const inputToggle = toggleSwitch.querySelector('input')
 
-if(document.cookie.includes('font')){
-    let foont = document.cookie.slice(5).replace(/"/g, '')
+//if the user has already selected a font, let them keep it
+if(cookieMonster('font')){
+    let foont = cookieMonster('font').replace(/"/g, '')
+    console.log(foont)
     root.style.setProperty('--font',foont)
-    if(/serif/.test(foont)){
-        inputToggle.checked = true
-    }
 }
 
 //add event listener to the toggle switch to swap into the higher contrast version so that viewers don't have to struggle with the font
 //add a cookie when doing this, so that we can check for the cookie and not force the user to recheck the toggle on each page
-
 inputToggle.addEventListener('change', (e)=>{
     
     if(e.target.checked) {
         root.style.setProperty('--font', "Merriweather, serif")
-        document.cookie = 'font="Merriweather, serif"'
+        setCookie('font', "Merriweather, serif", 3)
     } else {
         root.style.setProperty('--font', "Special Elite, cursive")
-        document.cookie = 'font="Special Elite, cursive"'
+        setCookie('font', "Special Elite, cursive", 3)
         console.log('eh?')
     }
 })
@@ -49,9 +48,7 @@ class Bubble {
         this.bubble.style.width = `${this._size}px`
         this.bubble.style.filter = `blur(${this._blur}px)`
         this.bubble.style.transition = '4s ease'
-        // this.bubble.style.background = this._color
         this.bubble.style.background = 'radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%);'
-        // this.bubble.style.boxShadow = `0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 125, 125, 1)`
         this.bubble.style.boxShadow = `0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px ${this._color}`
         this.bubble.style.opacity = 0
         this.bubble.style.zIndex = -1
@@ -71,7 +68,6 @@ class Bubble {
                 this.range = 0
                 this.bubble.style.transition = '0s'
                 this.bubble.style.opacity = 0;
-                // this.bubble.style.top = this.range +'px'
                 this.randomStart()
                 this.bubble.style.transform = `translate(calc(${this.startPOS}vw - 30px), calc(40vh - 20px))`
             }
@@ -79,7 +75,6 @@ class Bubble {
                 this.bubble.style.transition = '4s ease-in-out'
                 this.bubble.style.opacity = 1;
                 this.range = this.range - distance
-                // this.bubble.style.top = this.range +'px'
                 this.bubble.style.transform = `translate(calc(${this.startPOS}vw - 30px), calc(40vh + ${this.range}px))`
             }
         }, (Math.floor(Math.random() * (4000 - 1000 + 1) ) + 1000) + 1);
@@ -117,3 +112,27 @@ function makeBubbles(){
         blubble.moveBubble()
     })
 }
+
+//add cookie
+//these two functions were derived from https://www.w3schools.com/js/js_cookies.asp
+function setCookie(key, value, expireInDays) {
+    const daat = new Date()
+    daat.setTime(daat.getTime() + (expireInDays * 24 * 60 * 60 * 1000)) // 24hours per day, 60 minutes per hour, 60 seconds per minute, 1000 milliseconds per second
+    const expires = "expires=" + daat.toUTCString()
+    document.cookie = `${key}=${value};${expires};path=/`
+}
+//which key do we have?
+function cookieMonster(key) {
+    const decodedCookie = decodeURIComponent(document.cookie)
+    const cookieArray = decodedCookie.split(';'); 
+    const regex = /(^[\w+\d*]*)\=([\w+\d*,?\ ?'?]*$)/ //a regex that will need to be tested against other cookies but for not it works with the oes I'm setting
+    for (let i = 0; i < cookieArray.length; i++) {
+        const check = JSON.parse(cookieArray[i].replace(regex, '{"$1":"$2"}')) //turn each element into a JSON key value pair
+        if (check[key] !== undefined) { //check if the key defined matches the key with values that we're looking for(will need to test this as well)
+            return check[key]
+        } else {
+            return ""
+        }
+    }
+}
+

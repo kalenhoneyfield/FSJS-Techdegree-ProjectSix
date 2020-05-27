@@ -1,5 +1,5 @@
 /* allow for some themeing */
-/* commented out css is the original css */
+/* use css vars we can more easily manage our color palette, as well as set some of the values via JavaScript */
 :root {
   --color-bg-accent: #0c120c;
   --color-bg-accent-other: #001021;
@@ -14,7 +14,7 @@
 }
 
 
-
+/* commented out css is the original css */
 h1,h2,h3,h4,h5,p{
   /* font-family: 'Merriweather', serif; */
   font-family: var(--font)
@@ -192,8 +192,7 @@ a:hover{
 }
 
 /*
-Styles adjusted from template
-Experimenting atm
+Styles add to template
 */
 .box:hover{
   border-radius: 5px;
@@ -214,17 +213,18 @@ body{
   visibility: hidden;
 }
 
+/* The toggle switch was largely inspired by https://www.w3schools.com/howto/howto_css_switch.asp */
 .toggleDesc {
   font-family: var(--font-other);
 }
-.toggle {
+.toggled {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 20px;
 }
 
-.toggle input { 
+.toggled input { 
   opacity: 0;
   width: 0;
   height: 0;

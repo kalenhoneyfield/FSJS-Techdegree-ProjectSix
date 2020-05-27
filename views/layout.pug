@@ -24,16 +24,23 @@ html(class="no-js" lang="en" dir="ltr")
             img.thumbnail(src=`${personal.portrait}`)
           .cell.auto
 
-            h5 #{personal.name}
+            h5 #{personal.name} 
 
             p.text-light
               | JavaScript Developer, Father, Security Specialist, Capable of doing infinite loops in 2 seconds
  
             a(href='/about') Learn More →
 
+          //- add a toggle to set a different font based on user feedback from @Agata
+          //- The feedback was that the contrast on the font I had chosen wasn't high enough based on the background, 
+          //- but adjusting the background/font colors seems more daunting due to the shear number of other color choices that would need to be made.
+          //- this appears to be a nice middle ground
           .cell
-            label.toggle
-              input(type='checkbox')
+            label.toggled
+              if cookies.font === 'Special Elite, cursive'
+                input(type='checkbox')
+              else
+                input(type='checkbox' checked)
               div.toggleSlider.round
             p.text-light.toggleDesc
               | Higher Contrast Font

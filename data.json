@@ -96,7 +96,7 @@
         {
             "id": 4,
             "project_name": "Employee Directory using a Public API",
-            "description": "An demonstration of pulling in data from an API. This app pulls in data from the randomuser.me public API, and then renders an employee directory. Selecting an employee shows additional details regardng that employee and you can cycle between employees using basic modal elements. Dynamic color adjustments have been added based on converting data in the API, finding the employee's image on the DOM, and then centering the adjustment behind the image.",
+            "description": "An demonstration of pulling in data from an API. This app pulls in data from the randomuser.me public API, and then renders an employee directory. Selecting an employee shows additional details regarding that employee and you can cycle between employees using basic modal elements. Dynamic color adjustments have been added based on converting data in the API, finding the employee's image on the DOM, and then centering the adjustment behind the image.",
             "technologies": [
                 "JavaScript",
                 "HTML",
@@ -115,7 +115,7 @@
         {
             "id": 5,
             "project_name": "Portfolio.kalen",
-            "description": "This very project!",
+            "description": "This very project! Thank you for taking the time to review my work. I hope you have a wonderful day. To find the full project description for this project, please visit the GitHub Repo link on the right. ",
             "technologies": [
                 "Node js",
                 "Express",

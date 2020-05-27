@@ -11,13 +11,13 @@ router.get('/', (req, res) =>{
 router.get('/:id', (req, res, next) =>{
     try{
         const { id } = req.params
-        if(isNaN(id)){
+        if(isNaN(id)){ //assuming the user hand types in a project name
             const error = new Error('Project Path Not Found')
             error.statusCode = 404
             return next(error)
         }
-        else if(!data.projects[id]){
-            const error = new Error('Project Not Found')
+        else if(!data.projects[id]){ //assuming we somehow end up on a valid number but invalid project id
+            const error = new Error(`Project with ID:${id} Not Found on System`)
             error.statusCode = 404
             return next(error)
         }
