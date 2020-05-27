@@ -8,7 +8,6 @@ const inputToggle = toggleSwitch.querySelector('input')
 //if the user has already selected a font, let them keep it
 if(cookieMonster('font')){
     let foont = cookieMonster('font').replace(/"/g, '')
-    console.log(foont)
     root.style.setProperty('--font',foont)
 }
 
@@ -22,7 +21,6 @@ inputToggle.addEventListener('change', (e)=>{
     } else {
         root.style.setProperty('--font', "Special Elite, cursive")
         setCookie('font', "Special Elite, cursive", 3)
-        console.log('eh?')
     }
 })
 
@@ -125,7 +123,7 @@ function setCookie(key, value, expireInDays) {
 function cookieMonster(key) {
     const decodedCookie = decodeURIComponent(document.cookie)
     const cookieArray = decodedCookie.split(';'); 
-    const regex = /(^[\w+\d*]*)\=([\w+\d*,?\ ?'?]*$)/ //a regex that will need to be tested against other cookies but for not it works with the oes I'm setting
+    const regex = /(^[\w+\d*]*)\=([\w+\d*,?\ ?'?]*$)/ //a regex that will need to be tested against other cookies but for now it works with the ones I'm setting
     for (let i = 0; i < cookieArray.length; i++) {
         const check = JSON.parse(cookieArray[i].replace(regex, '{"$1":"$2"}')) //turn each element into a JSON key value pair
         if (check[key] !== undefined) { //check if the key defined matches the key with values that we're looking for(will need to test this as well)

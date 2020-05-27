@@ -4,7 +4,7 @@ const data = require('./data.json');
 const os = require('os'); //to get hostname
 const path = require('path')
 const colors = require('colors') //to help make our console logged errors fun
-const logger = require('morgan'); //for logging, while right now this only logs to the concole, this could help in logging to /var/log/www or some other
+const logger = require('morgan'); //for logging, while right now this only logs to the console, this could help in logging to /var/log/www or some other
 const projectRoute = require('./routes/index')
 const error404Handler = require('./routes/errorHandler')
 
@@ -39,8 +39,8 @@ app.use('*', error404Handler)
 app.use((err, req, res, next) => {
     err.statusCode = err.statusCode || 500
     data.error = err
-    //I'm adding the following console log to make sure I hit meets expectations here, I would think the logger added above would be sufficiant, just covering my bases
-    console.log(`User attempted to get page ${req.originalUrl.underline.red} but recieved this message in the browser: ${err.message.red}`)
+    //I'm adding the following console log to make sure I hit meets expectations here, I would think the logger added above would be sufficient, just covering my bases
+    console.log(`User attempted to get page ${req.originalUrl.underline.red} but received this message in the browser: ${err.message.red}`)
     res.status(err.statusCode).render('error', data)
 })
 
